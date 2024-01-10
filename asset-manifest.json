@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.80382e90.css",
+    "main.js": "/static/js/main.6353cbff.js",
+    "static/js/787.2408d684.chunk.js": "/static/js/787.2408d684.chunk.js",
+    "static/media/hero-video-home.mp4": "/static/media/hero-video-home.1e5abd7cc12456b8fb50.mp4",
+    "static/media/img-amr.svg": "/static/media/img-amr.ca991695fa55ea9a60640e6aeb1953ce.svg",
+    "static/media/img-robot-control-system.svg": "/static/media/img-robot-control-system.7a3c221b15d17a623e1e1f2e8daa56b3.svg",
+    "static/media/img-humanoids.svg": "/static/media/img-humanoids.5dfc2d41acd5e63ed5f5f901239fbd7c.svg",
+    "static/media/img-cobots.svg": "/static/media/img-cobots.582555cc7a0ae2c3721d6025e0cfcb93.svg",
+    "static/media/img-agv.svg": "/static/media/img-agv.f1dbbcd5f62ad37e3b96ff18eea9a6d1.svg",
+    "static/media/logo-partner-aubo.svg": "/static/media/logo-partner-aubo.ac692d286c26d4b962bb0119e4b6568c.svg",
+    "static/media/logo-partner-autox.svg": "/static/media/logo-partner-autox.11601264d4ff64da5410cba2a933a8d9.svg",
+    "static/media/logo-pattner-invia.svg": "/static/media/logo-pattner-invia.af1d87a90b3b0d05cca39d822174e708.svg",
+    "static/media/logo-partner-mir.svg": "/static/media/logo-partner-mir.dfa31f5d5b89373d6e0f41c8e1e15ff5.svg",
+    "static/media/logo-partner-elite.svg": "/static/media/logo-partner-elite.eddf7c7162d2586a8e68273660a45137.svg",
+    "static/media/logo.svg": "/static/media/logo.b39fb8efd51434e9ef9df33bed1aaa80.svg",
+    "static/media/logo-partner-viggorobot.svg": "/static/media/logo-partner-viggorobot.c8647db35aa3b57d2636632be943f814.svg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.80382e90.css.map": "/static/css/main.80382e90.css.map",
+    "main.6353cbff.js.map": "/static/js/main.6353cbff.js.map",
+    "787.2408d684.chunk.js.map": "/static/js/787.2408d684.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80382e90.css",
+    "static/js/main.6353cbff.js"
+  ]
+}
