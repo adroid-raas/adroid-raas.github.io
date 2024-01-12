@@ -1,11 +1,18 @@
 .ad-footer {
     width: 100%;
     display: inline-block;
-    padding: 50px 0 40px 0;
+    padding: 20px 0 7px 0;
 }
 
 .ad-footer .container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ad-footer p,
+.ad-footer p a {
+    color: rgba(var(--white), 1);
 }
 
 .ad-footer aside {
@@ -42,13 +49,17 @@
     padding-right: 80px;
 }
 
+.ad-footer .footer-logo {
+    width: 100%;
+}
+
 .ad-footer .footer-logo img {
     max-height: 38px;
 }
 
 .ad-social-links {
     display: flex;
-    align-items: center;
+    margin-bottom: 0;
 }
 
 .ad-social-links li {
@@ -62,7 +73,7 @@
 }
 
 .ad-social-links a {
-    margin-right: 18px !important
+    margin:0 30px 0 0 !important
 }
 
 .ad-social-links li a svg {
@@ -99,5 +110,15 @@
 
     .ad-footer aside:last-child {
         margin-bottom: 0;
+    }
+
+    .ad-social-links {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 35px;
+    }
+
+    .ad-social-links a {
+        margin:0 10px !important
     }
 }

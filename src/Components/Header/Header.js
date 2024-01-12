@@ -94,7 +94,7 @@ export const Header = () => {
                 <Navbar></Navbar>
 
                 <div className='btn-right'>
-                    <a href={'/'} className='btn btn-primary'>Try Us</a>
+                    <a href='#contact' className='btn btn-primary'>Try Us</a>
                 </div>
             </div>
         </header>

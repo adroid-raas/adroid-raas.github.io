@@ -1,9 +1,8 @@
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import './style.css'
 
 const Navbar = () => {
-
     const [mobileMenuActive, setMobileMenuActive] = useState(false)
 
     const toggleMobileMenu = () => {
@@ -15,10 +14,12 @@ const Navbar = () => {
     }
 
     const menuItems = [
-        {mid: 1, label: 'Home', link: '/'},
-        {mid: 2, label: 'Contact', link: '/contact'},
+        {mid: 1, label: 'Home', link: '#home'},
+        {mid: 2, label: 'Products', link: '#products'},
+        {mid: 3, label: 'Process', link: '#process'},
+        {mid: 4, label: 'Industries', link: '#industries'},
+        {mid: 5, label: 'Partners', link: '#partners'},
     ]
-
 
     return (
         <div className={` ${mobileMenuActive ? 'ad-mobile-nav-open' : ''}`}>
@@ -26,7 +27,7 @@ const Navbar = () => {
                 <ul>
                     {
                         menuItems.map((menuList) => (
-                                <li key={menuList.mid}><NavLink onClick={closeMobileMenu} to={menuList.link}>{menuList.label}</NavLink></li>
+                                <li key={menuList.mid}><a onClick={closeMobileMenu} href={menuList.link}>{menuList.label}</a></li>
                             )
                         )
                     }
