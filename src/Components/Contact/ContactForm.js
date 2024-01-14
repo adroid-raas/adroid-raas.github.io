@@ -78,7 +78,7 @@ export const ContactForm = () => {
             setFormSuccess(true);
         
     
-        emailjs.sendForm('service_x412fgh', 'template_4n2rnph', form.current, 'ksSoioYuZzx8U2xh_')
+        emailjs.sendForm('service_ywajhim', 'template_4n2rnph', form.current, 'ksSoioYuZzx8U2xh_')
           .then((result) => {             
               console.log(result.text);
           }, (error) => {            
