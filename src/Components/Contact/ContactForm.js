@@ -1,7 +1,11 @@
 import {useState} from "react";
+import {useRef} from "react";
+import emailjs from '@emailjs/browser';
 import './style.css'
 
 export const ContactForm = () => {
+    const form = useRef();
+    
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
@@ -42,7 +46,6 @@ export const ContactForm = () => {
             });
             return false;
         }
-
         return true;
     };
 
@@ -72,13 +75,22 @@ export const ContactForm = () => {
             setWebsite("");
             setMessage("");
             setFormSuccess(true);
+        
+    
+        emailjs.sendForm('service_ywajhim', 'template_4n2rnph', form.current, 'ksSoioYuZzx8U2xh_')
+          .then((result) => {             
+              console.log(result.text);
+          }, (error) => {            
+              console.log(error.text);
+          });  
+
         }
     };
 
     return (
         <>
             {formSuccess && <p style={{color: "green"}}>Submitted Successfully!</p>}
-            <form className='ad-form' onSubmit={handleFormSubmit}>
+            <form ref={form} className='ad-form' onSubmit={handleFormSubmit}>
                 <div className='form-group'>
                     <input
                         className={error.nameError && ("hasError" || 'form-control')}
@@ -86,7 +98,7 @@ export const ContactForm = () => {
                         onKeyDown={() => setError({...error, nameError: ""})}
                         type="text"
                         placeholder="Name*"
-                        value={name}
+                        value={name} name="user_name"
                     />
                     {error.nameError && <span className="errorMessage">{error.nameError}</span>}
                 </div>
@@ -97,7 +109,7 @@ export const ContactForm = () => {
                         onKeyDown={() => setError({...error, emailError: ""})}
                         type="Email"
                         placeholder="Email*"
-                        value={email}
+                        value={email} name="user_email"
                     />
                     {error.emailError && <span className="errorMessage">{error.emailError}</span>}
 
@@ -108,8 +120,8 @@ export const ContactForm = () => {
                         onChange={(e) => setPhone(e.target.value)}
                         onKeyDown={() => setError({...error, phoneError: ""})}
                         type="number"
-                        placeholder="Phone"
-                        value={phone}
+                        placeholder="Phone (ex: +1 123 456-7890)"
+                        value={phone} name="phone"
                     />
                     {error.phoneError && <span className="errorMessage">{error.phoneError}</span>}
                 </div>
@@ -120,7 +132,7 @@ export const ContactForm = () => {
                         onKeyDown={() => setError({...error, companyError: ""})}
                         type="text"
                         placeholder="Company"
-                        value={company}
+                        value={company} name="company"
                     />
                     {error.companyError && <span className="errorMessage">{error.companyError}</span>}
                 </div>
@@ -131,7 +143,7 @@ export const ContactForm = () => {
                         onKeyDown={() => setError({...error, websiteError: ""})}
                         type="url"
                         placeholder="Website"
-                        value={website}
+                        value={website} name="website"
                     />
                     {error.websiteError && <span className="errorMessage">{error.websiteError}</span>}
                 </div>
@@ -140,10 +152,8 @@ export const ContactForm = () => {
                     className={error.messageError && "hasError"}
                     onChange={(e) => setMessage(e.target.value)}
                     onKeyDown={() => setError({...error, messageError: ""})}
-                    rows="5"
-                    placeholder="Comment*"
-                    value={message}
-                />
+                    rows="5" placeholder="Comment*" value={message}
+                name="message"/>
                     {error.messageError && (
                         <span className="errorMessage mt-0">{error.messageError}</span>
                     )}
