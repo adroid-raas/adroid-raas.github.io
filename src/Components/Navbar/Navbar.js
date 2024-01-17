@@ -18,7 +18,7 @@ const Navbar = () => {
         {mid: 2, label: 'Products', link: '#products'},
         {mid: 3, label: 'Process', link: '#process'},
         {mid: 4, label: 'Industries', link: '#industries'},
-        {mid: 5, label: 'About', link: '#about'},
+        {mid: 5, label: 'Partners', link: '#partners'},
     ]
 
     return (

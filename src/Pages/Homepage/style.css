@@ -44,11 +44,6 @@
     line-height: 1.2em;
 }
 
-.ad-products a:hover .icon-play {
-    transform: translateX(-50%) translateY(-50%);
-    opacity: 1;
-}
-
 .ad-partners figure {
     display: flex;
     justify-content: center;
@@ -72,37 +67,22 @@
     font-size: 15px;
 }
 
-.ad-process article {
-    height: 100%;
-    border-left: 1px solid rgba(var(--primary-color), 1);
-    counter-reset: list-number;
+.ad-process h4 {
+    display: flex;
+    align-items: center;
+    color: rgba(var(--white), 1);
 }
 
-.ad-process aside {
-    position: relative;
-    padding-left: 80px;
-    margin-bottom: 120px;
-    top: -10px
-}
-
-.ad-process aside:last-child {
-    margin-bottom: 0;
-    padding-bottom: 0
-}
-
-.ad-process aside:before {
-    counter-increment: list-number;
-    content: counter(list-number);
-    width:60px;
-    height:60px;
-    display:inline-flex;
-    align-items:center;
-    justify-content: center;
-    font-size:26px;
-    background-color:rgba(var(--primary-color), 1);
-    border-radius:50%;
-    color: rgba(var(--white), 1) !important;
-    position: absolute;
-    left: -30px;
-    top: -5px;
+.ad-process .ad-num-count {
+    min-width: 60px;
+    height: 60px;
+    display: inline-block;
+    background: rgba(var(--white), 1);
+    border-radius: 100%;
+    margin-right: 20px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgba(var(--text-color), 1);
 }
