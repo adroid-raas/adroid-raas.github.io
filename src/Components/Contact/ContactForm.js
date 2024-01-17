@@ -46,7 +46,6 @@ export const ContactForm = () => {
             });
             return false;
         }
-
         return true;
     };
 
@@ -121,7 +120,7 @@ export const ContactForm = () => {
                         onChange={(e) => setPhone(e.target.value)}
                         onKeyDown={() => setError({...error, phoneError: ""})}
                         type="number"
-                        placeholder="Phone"
+                        placeholder="Phone (ex: +1 123 456-7890)"
                         value={phone} name="phone"
                     />
                     {error.phoneError && <span className="errorMessage">{error.phoneError}</span>}
