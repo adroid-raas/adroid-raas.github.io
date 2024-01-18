@@ -48,7 +48,7 @@ html {
 
 ::-moz-selection {
   color: rgba(var(--text-color), 1);
-  background: #FDDE74
+  background: rgba(var(--grey), 0.35)
 }
 
 ::selection {
@@ -59,7 +59,7 @@ html {
 body {
   font-family: var(--primary-font);
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.6em;
   color: rgba(var(--text-color), 1);
   background: rgba(var(--bg-dark), 1);
@@ -300,6 +300,19 @@ ol {
   background: rgba(var(--bg-dark), 1) !important;
 }
 
+.bg-dark {
+  color: rgba(var(--white), 1);
+}
+
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark h4,
+.bg-dark h5,
+.bg-dark h6 {
+  color: rgba(var(--white), 1);
+}
+
 .text-gradient {
   background: linear-gradient(90.18deg, #487DEC 1.96%, #B423FE 73.71%);
   -webkit-background-clip: text;
@@ -453,7 +466,7 @@ ol {
   }
 
   h2.h2_xlarge {
-    font-size: 46px
+    font-size: 50px
   }
 
   h3 {
@@ -511,6 +524,11 @@ ol {
   position: absolute;
   top: 2px;
   left: 0;
+}
+
+.bg-dark .check-ul-list li:before {
+  content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48IS0tISBGb250IEF3ZXNvbWUgUHJvIDYuMS4xIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlIChDb21tZXJjaWFsIExpY2Vuc2UpIENvcHlyaWdodCAyMDIyIEZvbnRpY29ucywgSW5jLiAtLT48cGF0aCBkPSJNNDQzLjMgMTAwLjdDNDQ5LjYgMTA2LjkgNDQ5LjYgMTE3LjEgNDQzLjMgMTIzLjNMMTcxLjMgMzk1LjNDMTY1LjEgNDAxLjYgMTU0LjkgNDAxLjYgMTQ4LjcgMzk1LjNMNC42ODYgMjUxLjNDLTEuNTYyIDI0NS4xLTEuNTYyIDIzNC45IDQuNjg2IDIyOC43QzEwLjkzIDIyMi40IDIxLjA2IDIyMi40IDI3LjMxIDIyOC43TDE2MCAzNjEuNEw0MjAuNyAxMDAuN0M0MjYuOSA5NC40NCA0MzcuMSA5NC40NCA0NDMuMyAxMDAuN0g0NDMuM3oiLz48L3N2Zz4=");
+  filter: contrast(0%) brightness(100%);
 }
 
 .content-main {
@@ -633,4 +651,45 @@ ol {
   left: 0;
   width: 100%;
   height: 100%
+}
+
+.icon-play {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  background: linear-gradient(90.18deg, #487DEC 1.96%, #B423FE 73.71%);
+  line-height: 60px;
+  text-align: center;
+  border-radius: 100%;
+  transition: 0.3s ease-in;
+  opacity: 0;
+}
+
+.icon-play svg {
+  width: 25px;
+  height: 25px;
+  fill: rgba(var(--white));
+  margin-left: 3px;
+}
+
+.sticky-top {
+  top: 140px;
+}
+
+.link-text {
+  vertical-align: middle;
+}
+
+.link-text {
+  font-weight: 600;
+  font-size: 18px
+}
+
+.link-text svg {
+  width: 0.8em;
+  margin-right: 10px;
+  margin-bottom: 2px;
 }
