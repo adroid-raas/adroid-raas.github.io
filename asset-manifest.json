@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.089bd3f7.css",
+    "main.js": "/static/js/main.f90e63c7.js",
+    "static/js/787.2408d684.chunk.js": "/static/js/787.2408d684.chunk.js",
+    "static/media/hero-video-home.mp4": "/static/media/hero-video-home.1e5abd7cc12456b8fb50.mp4",
+    "static/media/img-amr.svg": "/static/media/img-amr.c89d8bc40a7cf69e8321b42acc964979.svg",
+    "static/media/img-robot-control-system.svg": "/static/media/img-robot-control-system.8c5fda23844a8a46faf4836a51b93b33.svg",
+    "static/media/img-humanoids.svg": "/static/media/img-humanoids.0df6111f5a5cb042484aa7b5d449d0c6.svg",
+    "static/media/img-cobots.svg": "/static/media/img-cobots.335d947ad0b569cc58d11410fd0b6c00.svg",
+    "static/media/img-agv.svg": "/static/media/img-agv.b9d7a6fb29ffbcaad279a37804204463.svg",
+    "static/media/logo-partner-autox.svg": "/static/media/logo-partner-autox.11601264d4ff64da5410cba2a933a8d9.svg",
+    "static/media/img-partner-universal-robots.svg": "/static/media/img-partner-universal-robots.c396e80485a122150f51de15fe843681.svg",
+    "static/media/logo-pattner-invia.svg": "/static/media/logo-pattner-invia.af1d87a90b3b0d05cca39d822174e708.svg",
+    "static/media/logo-partner-mir.svg": "/static/media/logo-partner-mir.dfa31f5d5b89373d6e0f41c8e1e15ff5.svg",
+    "static/media/logo.svg": "/static/media/logo.b39fb8efd51434e9ef9df33bed1aaa80.svg",
+    "static/media/logo-partner-keenon.svg": "/static/media/logo-partner-keenon.388338c7b64884498def7de3b4b4edb1.svg",
+    "static/media/img-partner-formant.svg": "/static/media/img-partner-formant.eb5e497d8594b4369c6640e1e96677c0.svg",
+    "static/media/logo-partner-viggorobot.svg": "/static/media/logo-partner-viggorobot.c8647db35aa3b57d2636632be943f814.svg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.089bd3f7.css.map": "/static/css/main.089bd3f7.css.map",
+    "main.f90e63c7.js.map": "/static/js/main.f90e63c7.js.map",
+    "787.2408d684.chunk.js.map": "/static/js/787.2408d684.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.089bd3f7.css",
+    "static/js/main.f90e63c7.js"
+  ]
+}
