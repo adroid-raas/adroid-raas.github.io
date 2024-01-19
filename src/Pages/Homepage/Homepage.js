@@ -18,6 +18,7 @@ import partnerInvia from '../../img/logo-pattner-invia.svg'
 import partnerKeenon from '../../img/logo-partner-keenon.svg'
 import partnerFormant from '../../img/img-partner-formant.svg'
 import partnerUniversal from '../../img/img-partner-universal-robots.svg'
+import partnerCyberworks from '../../img/logo-partner-cyberworks-robotics.svg'
 
 import './style.css'
 import ContactForm from "../../Components/Contact/ContactForm";
@@ -110,7 +111,7 @@ export const Homepage = () => {
                             infinite: false,
                         },
                     }}>
-                    <div className="row d-flex justify-content-center align-items-center">
+                    <div className="row d-flex justify-content-center align-items-center mb-8">
                         <div className="col-lg-4">
                             <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=-92Ds-Vmyyw">
                                 <div className="ad-card d-block bg-grey overflow-hidden mb-4">
@@ -207,6 +208,43 @@ export const Homepage = () => {
                         </div>
                     </div>
                     </Fancybox>
+
+                    <div className="pt-80 pb-5">
+                        <div className="container">
+                            <div className="row align-items-stretch text-center">
+                                <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                                    <div className="ad-card bg-grey text-center h-100">
+                                        <div className="ad-card-body h-100">
+                                            <div className="text-count mb-3">$0</div>
+                                            <h4 className='d-block pb-0'>No CapEx</h4>
+                                            <p className='pb-0'>No upfront costs. Pay-as-you-Go Model.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                                    <div className="ad-card bg-grey text-center h-100">
+                                        <div className="ad-card-body h-100">
+                                            <div className="text-count mb-3">30%</div>
+                                            <h4 className='d-block pb-0'>OpEx Reduction</h4>
+                                            <p className='pb-0'>Immediate Profits with Reduced Operational Cost.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                                    <div className="ad-card bg-grey text-center h-100">
+                                        <div className="ad-card-body h-100">
+                                            <div className="text-count mb-3">2x</div>
+                                            <h4 className='d-block pb-0'>Capacity Increase</h4>
+                                            <p className='pb-0'>Increase your productivity & efficiency, and reach more
+                                                customers.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -234,7 +272,7 @@ export const Homepage = () => {
                                 </aside>
 
                                 <aside>
-                                    <h3 className='text-white'>Development</h3>
+                                    <h3 className='text-white'>Develop</h3>
                                     <ul className='check-ul-list mb-0'>
                                         <li>Solution Selection</li>
                                         <li>Customization</li>
@@ -257,48 +295,10 @@ export const Homepage = () => {
                                     <ul className='check-ul-list mb-0'>
                                         <li>Capture Real-Time Data Analytics</li>
                                         <li>Continuous Testing and Upgrades</li>
-                                        <li>Continuous Testing and Upgrades</li>
                                         <li className='mb-0'>Cloud Controlled Fleet Management</li>
                                     </ul>
                                 </aside>
                             </article>
-                        </div>
-                    </div>
-
-                    <div className="pt-80 pb-5">
-                        <div className="container">
-                            <div className="row align-items-stretch text-center">
-                                <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                                    <div className="ad-card bg-grey text-center h-100">
-                                        <div className="ad-card-body h-100">
-                                            <div className="text-count mb-3">$0</div>
-                                            <h4 className='text-white d-block pb-0'>No CapEx</h4>
-                                            <p className='pb-0'>No upfront costs. Pay-as-you-Go Model.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                                    <div className="ad-card bg-grey text-center h-100">
-                                        <div className="ad-card-body h-100">
-                                            <div className="text-count mb-3">30%</div>
-                                            <h4 className='text-white d-block pb-0'>OpEx Reduction</h4>
-                                            <p className='pb-0'>Immediate Profits with Reduced Operational Cost.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                                    <div className="ad-card bg-grey text-center h-100">
-                                        <div className="ad-card-body h-100">
-                                            <div className="text-count mb-3">2x</div>
-                                            <h4 className='text-white d-block pb-0'>Capacity Increase</h4>
-                                            <p className='pb-0'>Increase your productivity & efficiency, and reach more
-                                                customers.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -541,6 +541,13 @@ export const Homepage = () => {
                                     </div>
                                 </div>
                             </div>
+                            <div className='p-2'>
+                                <div className="ad-card bg-dark text-center py-4">
+                                    <div className="ad-card-body">
+                                        <figure className='mb-0'><img src={partnerCyberworks} alt="Cyberworks"/></figure>
+                                    </div>
+                                </div>
+                            </div>
                         </Slider>
                     </div>
                 </div>
@@ -575,7 +582,6 @@ export const Homepage = () => {
                     </div>
                 </div>
             </div>
-
         </>
     );
 }

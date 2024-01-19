@@ -141,7 +141,7 @@ export const ContactForm = () => {
                         className={error.websiteError && "hasError"}
                         onChange={(e) => setWebsite(e.target.value)}
                         onKeyDown={() => setError({...error, websiteError: ""})}
-                        type="url"
+                        type="text"
                         placeholder="Website"
                         value={website} name="website"
                     />
