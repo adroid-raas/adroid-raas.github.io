@@ -4,6 +4,7 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import videoHome from '../../video/hero-video-home.mp4'
+import logo from '../../logo.svg'
 
 import imgAMR from '../../img/img-amr.svg'
 import imgAGV from '../../img/img-agv.svg'
@@ -23,6 +24,7 @@ import partnerCyberworks from '../../img/logo-partner-cyberworks-robotics.svg'
 import './style.css'
 import ContactForm from "../../Components/Contact/ContactForm";
 import Fancybox from "../../Components/Fancybox/Fancybox";
+import Header from "../../Components/Header/Header";
 
 export const Homepage = () => {
 
@@ -69,10 +71,16 @@ export const Homepage = () => {
 
     return (
         <>
+
             <Helmet>
                 <title>Adroid</title>
                 <meta name="description" content="Optimize operations seamlessly through RaaS and SaaS"/>
+                <meta property="og:title" content="Adroid" data-rh="true" />
+                <meta property="og:description" content="Optimize operations seamlessly through RaaS and SaaS" data-rh="true" />
+                <meta property="og:image" content={ logo } data-rh="true" />
             </Helmet>
+
+            <Header />
 
             <div id='home' className='ad-hero-home'>
                 <video className="w-100" autoPlay loop playsInline muted>
