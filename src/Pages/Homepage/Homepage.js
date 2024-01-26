@@ -26,6 +26,7 @@ import ContactForm from "../../Components/Contact/ContactForm";
 import Fancybox from "../../Components/Fancybox/Fancybox";
 import Header from "../../Components/Header/Header";
 
+
 export const Homepage = () => {
 
     useEffect(() => {
