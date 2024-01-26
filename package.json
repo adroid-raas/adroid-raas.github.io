@@ -2,7 +2,7 @@
   "homepage": "https://adroid-raas.adroid-raas.github.io/",
   "name": "adroid",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
     "@fancyapps/ui": "^5.0.33",
