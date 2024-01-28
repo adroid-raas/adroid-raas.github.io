@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import {Helmet} from "react-helmet-async"
 import logo from '../../logo.svg'
 
@@ -15,7 +16,7 @@ export const Privacy = () => {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-7 mb-4 pb-3 d-flex justify-content-between align-items-center">
-                        <a href="/">
+                        <span>
                             <svg height="2.2em" viewBox="0 0 195 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M74.8738 18.9619C74.8738 30.124 67.6629 37.0936 56.0887 37.0936H45.7122V0.741394H56.0887C67.6629 0.71759 74.8738 7.70938 74.8738 18.9619ZM69.0867 18.9397C69.0867 11.2275 64.0679 6.40179 56.0648 6.40179H51.4087V31.411H56.1332C64.0901 31.411 69.0867 26.6075 69.0867 18.9397Z"
@@ -80,9 +81,12 @@ export const Privacy = () => {
                                     d="M26.4244 21.9262L20.6611 8.43454L20.6691 8.4155C21.9369 11.375 23.2397 14.4218 24.2865 16.872C24.2976 16.899 24.3103 16.9275 24.3214 16.9545C25.5415 19.8141 26.4021 21.8405 26.4244 21.9262Z"
                                     fill="black"/>
                             </svg>
-                        </a>
+                        </span>
 
-                        <a href="/" className='text-medium'><svg className='me-2' height='1.2em' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M148.7 411.3l-144-144C1.563 264.2 0 260.1 0 256s1.562-8.188 4.688-11.31l144-144c6.25-6.25 16.38-6.25 22.62 0s6.25 16.38 0 22.62L54.63 240H496C504.8 240 512 247.2 512 256s-7.156 16-16 16H54.63l116.7 116.7c6.25 6.25 6.25 16.38 0 22.62S154.9 417.6 148.7 411.3z"/></svg> <u>Back to Home</u></a>
+                        <Link to="/">
+                            <svg className='me-2' height='1.2em' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M148.7 411.3l-144-144C1.563 264.2 0 260.1 0 256s1.562-8.188 4.688-11.31l144-144c6.25-6.25 16.38-6.25 22.62 0s6.25 16.38 0 22.62L54.63 240H496C504.8 240 512 247.2 512 256s-7.156 16-16 16H54.63l116.7 116.7c6.25 6.25 6.25 16.38 0 22.62S154.9 417.6 148.7 411.3z"/></svg>
+                            <u>Back to Home</u>
+                        </Link>
                     </div>
 
                     <div className="col-lg-7 mb-80">

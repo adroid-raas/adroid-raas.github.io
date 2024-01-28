@@ -5,9 +5,9 @@ import Homepage from "./Pages/Homepage/Homepage";
 import Terms from "./Pages/Terms/Terms";
 import Privacy from "./Pages/Privacy/Privacy";
 
-const router = createBrowserRouter ([
+const router = createBrowserRouter([
     {
-        path: '',
+        path: "/",
         element: <Root />,
         children:[
             { index: true, element: <Homepage /> },
