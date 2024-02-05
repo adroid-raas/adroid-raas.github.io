@@ -10,9 +10,10 @@ export const Footer = () => {
                 <div className="container my-4">
                     <div className="row align-items-center">
                         <div className="col-md-6 text-center text-md-start">
-                            <div className="footer-logo mb-4">
+                            <div className="footer-logo mb-2">
                                 <img src={footerLogo} alt={pkg.name}/>
                             </div>
+                            <p className='text-medium'>3080 Yonge Street Suite 6060 Toronto, ON M4N 3N1</p>
 
                             <ul className="ad-social-links p-0">
                                 <li><a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
